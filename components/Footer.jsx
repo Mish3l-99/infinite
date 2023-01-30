@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end">
             <Image
               alt="/"
-              src={"/logo/logo-bw.png"}
+              src={"/logo/logobw.png"}
               height={30}
               width={60}
               objectFit="cover"

@@ -23,7 +23,7 @@ const About = () => {
             <div className="w-9/12  h-[150px] md:w-[200px] md:h-[110px] mx-auto relative ">
               <Image
                 alt="/"
-                src={"/logo/logo-bw.png"}
+                src={"/logo/logobw.png"}
                 layout="fill"
                 objectFit="cover"
               />

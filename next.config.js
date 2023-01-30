@@ -8,6 +8,9 @@ const nextConfig = {
     defaultLocale: "ar",
     localeDetection: false,
   },
+  images: {
+    domains: ["https://infinite-one.vercel.app"],
+  },
 };
 
 module.exports = nextConfig;
