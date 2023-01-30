@@ -1,16 +1,39 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+.font-ar {
+  font-family: "Noto Naskh Arabic", serif !important;
 }
-
-* {
-  box-sizing: border-box;
+.font-en {
+  font-family: "Ubuntu", sans-serif !important;
+}
+@layer base {
+  body {
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide text-[18px];
+  }
+  .logo > img {
+    @apply h-[35px];
+  }
+  .container {
+    @apply max-w-[1245px] mx-auto px-2;
+  }
+  .social {
+    @apply mt-8 p-4 flex gap-x-3;
+  }
+  .social > div {
+    @apply p-2 shadow-lg shadow-gray-400 rounded-md;
+  }
+  .menu {
+    @apply mt-2 font-semibold;
+  }
+  .menu > li {
+    @apply transition-colors ease-in duration-300 hover:text-in;
+  }
+  .btn {
+    @apply px-4 py-1 rounded-md hover:outline-none;
+  }
+  .btn-in {
+    @apply w-full mt-8 bg-in border border-in hover:bg-transparent hover:text-in transition-all ease-out duration-500 text-white;
+  }
 }
