@@ -7,8 +7,14 @@ import content from "../content.json";
 import Image from "next/image";
 
 const Hero = () => {
-  const { locale } = useRouter();
+  const router = useRouter();
+  const { locale } = router;
   const con = content.contents.find((c) => c.locale === locale);
+
+  const goToContactForm = () => {
+    router.push("/#contact");
+  };
+
   return (
     <div id="home" className="w-full py-8">
       <div className="container">
@@ -77,6 +83,7 @@ const Hero = () => {
                 <Link href="/">{con.serv}</Link>
               </button>
               <motion.button
+                onClick={() => goToContactForm()}
                 // initial={{ scale: 0.8 }}
                 animate={{
                   scale: [1, 0.8, 1],

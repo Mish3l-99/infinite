@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .font-ar {
   font-family: "Noto Naskh Arabic", serif !important;
 }

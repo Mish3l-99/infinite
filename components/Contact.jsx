@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <div id="contact" className="w-full py-8 bg-white">
       <div className="container">
-        <div className="bg-black text-gray-200 rounded shadow-xl shadow-gray-500">
+        <div className="bg-gray-800 text-gray-200 rounded shadow-md shadow-gray-500">
           <div className="grid grid-cols-12 ">
             <div className="col-span-12 md:col-span-6 flex flex-col justify-center py-4 items-center">
               <div>

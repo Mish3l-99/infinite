@@ -13,6 +13,7 @@ export default function Document({ locale }) {
       <Head>
         <meta name="description" content={con.description} />
         <link rel="icon" href="/logo/favi.png" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
