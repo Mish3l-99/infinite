@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Image from "next/image";
 
@@ -19,6 +19,14 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const { locale } = useRouter();
   const con = content.contents.find((c) => c.locale === locale);
+
+  // prevent scrolling when nav is on
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => (document.body.style.overflow = "scroll");
+  }, [nav]);
 
   return (
     <div className="w-full flex justify-between py-2 items-center shadow-md ">
@@ -140,7 +148,11 @@ const Navbar = () => {
 
         <div className="social">
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/profile.php?id=100090908118168"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ImFacebook />
             </a>
           </div>

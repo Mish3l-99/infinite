@@ -94,7 +94,7 @@ const Hero = () => {
                   repeatDelay: 2,
                   repeat: Infinity,
                 }}
-                className="text-xl px-3 py-1 bg-in border-[#ecf0f3] border shadow-md shadow-gray-500 rounded text-white"
+                className="text-md md:text-lg px-3 py-[1px] bg-in border-[#ecf0f3] border shadow-md shadow-gray-500 rounded text-white"
               >
                 {con.talk}
               </motion.button>

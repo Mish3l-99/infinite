@@ -54,7 +54,11 @@ const Contact = () => {
               </div>
               <div className="flex gap-x-3 mt-2">
                 <div className="hover:text-blue-700 duration-500 ease-out hover:scale-90">
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100090908118168"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <AiFillFacebook size={30} />
                   </a>
                 </div>
