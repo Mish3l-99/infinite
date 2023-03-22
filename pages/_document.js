@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { useRouter } from "next/router";
+import Script from "next/script";
 
 import content from "../content.json";
 
@@ -11,16 +12,33 @@ export default function Document({ locale }) {
   return (
     <Html>
       <Head>
-        <meta name="description" content={con.abt_txt} />
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-F633627E6Z"
+        />
 
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-F633627E6Z', {
+          page_path: window.location.pathname,});`,
+          }}
+        />
+
+        {/* meta description */}
+        <meta name="description" content={con.abt_txt} />
         {/* keywords */}
         <meta
           name="keywords"
           content="software agency, برمجة تطبيقات , برمجة مواقع , متاجر الكترونية"
         />
-
         <link rel="icon" href="/logo/favi.png" />
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
