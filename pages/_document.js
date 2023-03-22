@@ -11,7 +11,14 @@ export default function Document({ locale }) {
   return (
     <Html>
       <Head>
-        <meta name="description" content={con.description} />
+        <meta name="description" content={con.abt_txt} />
+
+        {/* keywords */}
+        <meta
+          name="keywords"
+          content="software agency, برمجة تطبيقات , برمجة مواقع , متاجر الكترونية"
+        />
+
         <link rel="icon" href="/logo/favi.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
