@@ -31,13 +31,15 @@ export default function Document({ locale }) {
           }}
         />
 
-        {/* meta description */}
-        <meta name="description" content={con.abt_txt} />
         {/* keywords */}
         <meta
           name="keywords"
           content="software agency, برمجة تطبيقات , برمجة مواقع , متاجر الكترونية"
         />
+
+        {/* meta description */}
+        <meta name="description" content={con.abt_txt} />
+
         <link rel="icon" href="/logo/favi.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
