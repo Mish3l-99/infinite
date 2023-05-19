@@ -15,7 +15,7 @@ export default function Document({ locale }) {
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-F633627E6Z"
+          src="https://www.googletagmanager.com/gtag/js?id=G-RS2DRJQ859"
         />
 
         <Script
@@ -26,7 +26,7 @@ export default function Document({ locale }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-F633627E6Z', {
+          gtag('config', 'G-RS2DRJQ859', {
           page_path: window.location.pathname,});`,
           }}
         />
