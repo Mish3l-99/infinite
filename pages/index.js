@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Infinite Soft</title>
+        <title>إنفينتيت للحلول التقنية | Infinite Soft</title>
       </Head>
       <main>
         <Navbar />

@@ -13,7 +13,7 @@ export default function Document({ locale }) {
     <Html>
       <Head>
         {/* Google Analytics */}
-        <Script
+        {/* <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-RS2DRJQ859"
         />
@@ -29,7 +29,7 @@ export default function Document({ locale }) {
           gtag('config', 'G-RS2DRJQ859', {
           page_path: window.location.pathname,});`,
           }}
-        />
+        /> */}
 
         {/* keywords */}
         <meta
